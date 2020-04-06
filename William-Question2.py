@@ -1,0 +1,21 @@
+
+
+
+for i in range(int(input())): 
+        word = str(input())
+        word.upper() 
+        vowels = ['A','E','I','O','U']
+        count=0
+        for j in range(1,len(word)) :
+            
+            if (word[j] in vowels) : 
+                count=count+1 
+                if (word[j] in vowels) and (word[j+1] in vowels):
+                    if word[j-1] in vowels:
+                        count=count-1
+                
+                    
+            
+                #else:
+                    #count=count+1 
+        print (count) 
